@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotel Room Booking Form</title>
+</head>
+<body>
+  <h1>Hotel Room Booking Form</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend><strong>Guest Information</strong></legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Booking Details</strong></legend>
+
+      <label for="checkin">Check-in Date:</label><br>
+      <input type="date" id="checkin" name="checkin" required><br><br>
+
+      <label for="checkout">Check-out Date:</label><br>
+      <input type="date" id="checkout" name="checkout" required><br><br>
+
+      <label for="roomtype">Room Type:</label><br>
+      <select id="roomtype" name="roomtype" required>
+        <option value="">-- Select Room Type --</option>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+        <option value="deluxe">Deluxe Room</option>
+      </select><br><br>
+
+      <label for="guests">Number of Guests:</label><br>
+      <input type="number" id="guests" name="guests" min="1" max="10" required><br><br>
+
+      <label for="requests">Special Requests:</label><br>
+      <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Any special requests (e.g. extra bed, late check-in)..."></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Payment Method</strong></legend>
+
+      <label><input type="radio" name="payment" value="credit" required> Credit Card</label><br>
+      <label><input type="radio" name="payment" value="debit"> Debit Card</label><br>
+      <label><input type="radio" name="payment" value="upi"> UPI</label><br>
+      <label><input type="radio" name="payment" value="cash"> Cash at Check-in</label><br><br>
+    </fieldset>
+
+    <button type="submit">Submit Booking</button>
+    <button type="reset">Reset Form</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>College Timetable - Pure HTML</title>
+</head>
+<body>
+  <h1>College Timetable</h1>
+
+  <table border="1" cellspacing="0" cellpadding="6">
+    <caption><strong>Semester 1 — Timetable</strong><br>Department of Computer Science</caption>
+
+    <thead>
+      <tr>
+        <th rowspan="2">Time</th>
+        <th colspan="5">Weekdays</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>08:00 - 09:00</th>
+        <td>Basics of Mech Eng</td>
+        <td>Fundamentals of Linear Algebra & Stats</td>
+        <td>Soft Skills</td>
+        <td>Data Structures</td>
+        <td rowspan="2">Mentor Mentee</td>
+      </tr>
+
+      <tr>
+        <th>09:00 - 10:00</th>
+        <td>Basics of Electronics Eng</td>
+        <td>Design Thinking</td>
+        <td>Soft Skills</td>
+        <td>Fundamentals of Linear Algebra & Stats</td>
+      </tr>
+
+      <tr>
+        <th>10:00 - 11:00</th>
+        <td>Data Structures</td>
+        <td>Basics of Mech Eng</td>
+        <td>Professional Communication Lab</td>
+        <td colspan="2">Web Designing Workshop</td>
+      </tr>
+
+      <tr>
+        <th>11:00 - 12:00</th>
+        <td>Basics of Electronics Eng</td>
+        <td rowspan="2">Data Structure Lab</td>
+        <td>Design Thinking</td>
+        <td>Basics of Mech Eng</td>
+        <td>Soft Skills</td>
+      </tr>
+
+      <tr>
+        <th>12:00 - 13:00</th>
+        <td>Fundamentals of Linear Algebra & Stats</td>
+        <td>Digital Manufacturing Lab</td>
+        <td>Professional Communication Lab</td>
+        <td>
+          <table border="1" cellspacing="0" cellpadding="4">
+            <caption><small>Friday Lab Details</small></caption>
+            <thead>
+              <tr>
+                <th>Slot</th>
+                <th>Lab</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12:00 - 12:30</td>
+                <td>Electronics Eng Lab</td>
+              </tr>
+              <tr>
+                <td>12:30 - 13:00</td>
+                <td>Digital Manufacturing Lab</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <th>13:00 - 14:00</th>
+        <td colspan="5" align="center"><strong>Lunch Break</strong></td>
+      </tr>
+
+      <tr>
+        <th>14:00 - 15:00</th>
+        <td>Data Structures</td>
+        <td>Design Thinking</td>
+        <td rowspan="2">Data Structure Lab</td>
+        <td>Basics of Electronics Eng</td>
+        <td>Professional Communication Lab</td>
+      </tr>
+
+      <tr>
+        <th>15:00 - 16:00</th>
+        <td>Fundamentals of Linear Algebra & Stats</td>
+        <td>Soft Skills</td>
+        <td>Digital Manufacturing Lab</td>
+        <td>Web Designing Workshop</td>
+      </tr>
+
+      <tr>
+        <th>16:00 - 17:00</th>
+        <td colspan="3">Project / Self Study</td>
+        <td>Design Thinking</td>
+        <td>Mentor Mentee</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="6"><small>Labs and workshops alternate weekly. Timing subject to change.</small></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
